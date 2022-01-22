@@ -119,22 +119,24 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #FFF;
   padding: 15px 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: #FFF;
 }
 #header .logo {
   font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
+.margin-20{
+  margin-bottom: 20px;
+}
 #header .logo img {
   max-height: 40px;
 }
@@ -145,7 +147,7 @@ background-color: rgba(0,0,0,0.7);
 #  Get Startet Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  color: #fff;
+  color: #444444;
   border-radius: 4px;
   padding: 7px 25px 8px 25px !important;
   
@@ -216,7 +218,7 @@ background-color: rgba(0,0,0,0.7);
   padding: 10px;
   font-size: 15px;
   font-weight: 600 !important;
-  color: #fff;
+  color: rgba(0, 0, 0, 1);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -311,7 +313,7 @@ background-color: rgba(0,0,0,0.7);
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #FFF;
   transition: 0.3s;
   z-index: 999;
 }
@@ -360,7 +362,7 @@ background-color: rgba(0,0,0,0.7);
 }
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-  color: #151515;
+  color: #FFF;
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;

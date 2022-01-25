@@ -22,6 +22,9 @@
       color: #666;
       line-height: 22px;
     }
+    #footer p{
+      color: #fff;
+    }
 
     @media (min-width: 10px) {
       .colums div {
@@ -305,7 +308,7 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0 justify-content-center text-md-end ">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto " href="aboutus.html">About Us </a></li>
                     <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
                     <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
@@ -314,8 +317,8 @@
                             <li><a href="MulteAcademy.html">MulteAcademy</a></li>
                             <li><a href="MulteTech.html">MulteTech</a></li>
                             <li><a href="Multe_outreach.html">Multe outreach</a></li>
-                            <li><a href="">Kids Camp/ Workshop</a></li>
-                            <li><a href="">MulteToys Talk Show</a></li>
+                            <li><a href="Workshop.html">Kids Camp/ Workshop</a></li>
+                            <li><a href="multetoys.html">MulteToys Talk Show</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="What'sNew.html">What's New</a></li>
@@ -368,16 +371,16 @@
           <input id="eaddress" type="text" name="eaddress" required />
         </div>
         <div class="item">
-          <label for="phone">Phone Number<span>*</span></label>
-          <input id="phone" type="tel" name="phone" required />
+          <label for="fphone">Phone Number<span>*</span></label>
+          <input id="fphone" type="tel" name="fphone" required />
         </div>
         <div class="item">
-          <label for="phone">Alternate Number<span>*</span></label>
-          <input id="phone" type="tel" name="phone" required />
+          <label for="faphone">Alternate Number<span>*</span></label>
+          <input id="faphone" type="tel" name="faphone" required />
         </div>
         <div class="item">
-          <label for="city">Your Qualification<span>*</span></label>
-          <input id="city" type="text" name="city" required />
+          <label for="fqualification">Your Qualification<span>*</span></label>
+          <input id="fqualification" type="text" name="fqualification" required />
         </div>
 
         <div class="item">
@@ -390,12 +393,12 @@
         <label>Gender:</label>
         <div class="question-answer">
           <div>
-            <input type="radio" value="none" id="radio_1" name="type" />
-            <label for="radio_1" class="radio"><span>MALE</span></label>
+            <input type="radio" value="none" id="Gender_1" name="Gender" />
+            <label for="Gender_1" class="radio"><span>MALE</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="radio_2" name="type" />
-            <label for="radio_2" class="radio"><span>FEMALE</span></label>
+            <input type="radio" value="none" id="Gender_2" name="Gender" />
+            <label for="Gender_2" class="radio"><span>FEMALE</span></label>
           </div>
         </div>
       </div>
@@ -406,24 +409,24 @@
           <input id="ftuition" type="text" name="ftuition" required />
         </div>
         <div class="item">
-          <label for="etenth">Which subjects can you teach for Tenth and Intermediate?<span></span></label>
-          <input id="etenth" type="text" name="etenth" required />
+          <label for="ftenth">Which subjects can you teach for Tenth and Intermediate?<span></span></label>
+          <input id="ftenth" type="text" name="ftenth" required />
         </div>
       </div>
       <div class="question">
         <label>At which time you can take the classes in a day?</label>
         <div class="question-answer">
           <div>
-            <input type="radio" value="none" id="radio_1" name="type" />
-            <label for="radio_1" class="radio"><span>Morning</span></label>
+            <input type="radio" value="none" id="classes_1" name="classes" />
+            <label for="classes_1" class="radio"><span>Morning</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="radio_2" name="type" />
-            <label for="radio_2" class="radio"><span>Evening</span></label>
+            <input type="radio" value="none" id="classes_2" name="classes" />
+            <label for="classes_2" class="radio"><span>Evening</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="radio_3" name="type" />
-            <label for="radio_3" class="radio"><span>Any Time</span></label>
+            <input type="radio" value="none" id="classes_3" name="classes" />
+            <label for="classes_3" class="radio"><span>Any Time</span></label>
           </div>
         </div>
       </div>
@@ -450,6 +453,10 @@
           <div>
             <input type="radio" value="none" id="radio_1" name="type" />
             <label for="radio_1" class="radio"><span>1st class to 5th class</span></label>
+          </div>
+          <div>
+            <input type="radio" value="none" id="radio_2" name="type" />
+            <label for="radio_2" class="radio"><span>6th</span></label>
           </div>
           <div>
             <input type="radio" value="none" id="radio_2" name="type" />

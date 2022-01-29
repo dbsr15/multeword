@@ -147,10 +147,10 @@ background-color: rgba(0,0,0,0.7);
 #  Get Startet Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  color: #444444;
+  color: #343a40 ;
   border-radius: 4px;
   padding: 7px 25px 8px 25px !important;
-  
+  background-color: #ffbb38;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
@@ -159,7 +159,7 @@ background-color: rgba(0,0,0,0.7);
   margin: 0px 4px;
 }
 .get-started-btn:hover {
-  background: #ffbb38;
+  background: #fff;
   color: #343a40 !important;
   font-weight: 600;
 }
@@ -178,6 +178,7 @@ background-color: rgba(0,0,0,0.7);
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
+  
   border: 2px solid #444444;
   font-weight: 500;
 }
@@ -289,7 +290,7 @@ background-color: rgba(0,0,0,0.7);
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #151515;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -331,6 +332,7 @@ background-color: rgba(0,0,0,0.7);
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
+
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -353,6 +355,7 @@ background-color: rgba(0,0,0,0.7);
   padding: 10px 0;
   z-index: 99;
   opacity: 1;
+ 
   visibility: visible;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
@@ -362,7 +365,7 @@ background-color: rgba(0,0,0,0.7);
 }
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-  color: #FFF;
+  color: #151515;
 }
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
@@ -421,6 +424,7 @@ background-color: rgba(0,0,0,0.7);
   height: 100%;
   text-align: center;
 }
+
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
@@ -465,6 +469,13 @@ background-color: rgba(0,0,0,0.7);
 .banner{
   width: 100vh;
   background-size: cover;
+}
+.banner-1  p{
+ align-items: center;
+ color: #FFF !important;
+}
+.img-fluid-outreach{
+  width: 30%;
 }
 .app{
   background-color: #ffcd6b !important;
@@ -531,9 +542,8 @@ section {
 }
 .img-fluid-app{
   max-width: 90vh;
-  
-
 }
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -660,6 +670,56 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+/*--------------------------------------------------------------
+# Services-outreach
+--------------------------------------------------------------*/
+.services-1 .icon-box {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 20px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.services-1 .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffc451;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.services-1 .icon-box .icon i {
+  color: #151515;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.services-1 .icon-box h4 {
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.services-1 .icon-box h4 a {
+  color: #151515;
+  transition: ease-in-out 0.3s;
+}
+
+.services-1 .icon-box p {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.services-1 .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);

@@ -181,6 +181,13 @@
       cursor: pointer;
     }
 
+    label.checkbox {
+      position: relative;
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      cursor: pointer;
+    }
+
     .question span {
       margin-left: 30px;
     }
@@ -198,7 +205,20 @@
       border-radius: 50%;
       border: 2px solid #ccc;
     }
-
+    
+    label.checkbox:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+    input[type=checkbox]:checked+label:before,
+    label.checkbox:hover:before {
+      border: 2px solid #669999;
+    }
     input[type=radio]:checked+label:before,
     label.radio:hover:before {
       border: 2px solid #669999;
@@ -216,6 +236,22 @@
       border-right: none;
       transform: rotate(-45deg);
       opacity: 0;
+    }
+    label.checkbox:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 8px;
+      height: 4px;
+      border: 3px solid #669999;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+    }
+    input[type=checkbox]:checked+label:after {
+      opacity: 1;
     }
 
     input[type=radio]:checked+label:after {
@@ -274,7 +310,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> MulteArts/Events Registration</title>
+  <title> MulteArts/Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -351,19 +387,20 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Events Registration</h2>
+        <h2>Registration</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Events Registration</li>
+          <li>Registration</li>
         </ol>
       </div>
     </div>
   </section><!-- End Breadcrumbs -->
   <div class="testbox">
-    <form action="form" class="col-lg-11">
+    <form action="https://formsubmit.co/d.bharathsimha@gmail.com" method="POST" class="col-lg-11">
+      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 
       <div class="banner-1 ">
-        <h1> Events Registration form </h1>
+        <h1> Registration form </h1>
         
       </div>
       <div class="colums">
@@ -383,7 +420,7 @@
           <label for="phone">Alternate Phone Number:<span>*</span></label>
           <input id="phone" type="tel" name="phone" required />
         </div>
-        <div class="item">Email *<span>*</span></label>
+        <div class="item">Email:<span>*</span></label>
           <input id="city" type="email" name="city" required />
         </div>
 
@@ -401,11 +438,11 @@
           <label>Gender:</label>
           <div class="question-answer">
             <div>
-              <input type="radio" value="none" id="gender_1" name="gender" />
+              <input type="radio" value="MALE" id="gender_1" name="gender" />
               <label for="gender_1" class="radio"><span>MALE</span></label>
             </div>
             <div>
-              <input type="radio" value="none" id="gender_2" name="gender" />
+              <input type="radio" value="FEMALE" id="gender_2" name="gender" />
               <label for="gender_2" class="radio"><span>FEMALE</span></label>
             </div>
           </div>
@@ -414,12 +451,16 @@
           <label>Which course you want to learn?</label>
           <div class="question-answer">
             <div>
-              <input type="radio" value="none" id="course_learing_1" name="course_learing" />
+              <input type="radio" value="technical" id="course_learing_1" name="course_learing" />
               <label for="course_learing_1" class="radio"><span>Technical</span></label>
             </div>
             <div>
-              <input type="radio" value="none" id="course_learing_2" name="course_learing" />
+              <input type="radio" value="non-technical" id="course_learing_2" name="course_learing" />
               <label for="course_learing_2" class="radio"><span>Non Technical</span></label>
+            </div>
+            <div>
+              <input type="radio" value="Both" id="course_learing_3" name="course_learing" />
+              <label for="course_learing_2" class="radio"><span>Both</span></label>
             </div>
           </div>
         </div>
@@ -431,20 +472,27 @@
           <div class="question-answer">
             <select class="form-select form-select-sm" aria-label="Default select example">
               <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="Salesforce Training">Salesforce Training</option>
+              <option value="Salesforce LWC">Salesforce LWC</option>
+              <option value="HTML & HTML5">HTML & HTML5</option>
+              <option value="BOOTSTRAP4.5 LATEST">BOOTSTRAP4.5 LATEST</option>
+              <option value="PHP">PHP</option>
+              <option value="My SQL">My SQL</option>
+              <option value="EMBEDDED SYSTEMS">EMBEDDED SYSTEMS</option>
+              <option value="C Language">C Language</option>
+              <option value="Ms-Office">Ms-Office</option>
+              <option value="Ms-Excel(Basic+Advanced)">Ms-Excel(Basic+Advanced)</option>
             </select>
           </div>
         </div>
         <div class="question">
           <label>Non Technical:</label>
           <div class="question-answer">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+            <select class="form-select form-select-sm" name="non-technical" aria-label="Default select example">
               <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="GRAPHOLOGY">GRAPHOLOGY</option>
+              <option value="Pencil CALLIGRAPHY">Pencil CALLIGRAPHY</option>
+              <option value="Brush calligraphy">Brush calligraphy</option>
             </select>
           </div>
         </div>

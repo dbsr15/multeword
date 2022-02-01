@@ -378,7 +378,7 @@ background-color: rgba(0,0,0,0.7);
 }
 .getapp{
   color: #151515;
-  
+
     align-items: center;
     text-align: center;
     position: relative;
@@ -393,7 +393,15 @@ background-color: rgba(0,0,0,0.7);
 .img-fluid-app{
   width: 50%;
 }
-
+@media (max-width: 768px) {
+  .getapp{
+    top: 10px;
+  }
+  .getapp h3
+  {
+    font-size: 40px !important;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

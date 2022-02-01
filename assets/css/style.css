@@ -217,8 +217,8 @@ background-color: rgba(0,0,0,0.7);
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  font-size: 15px;/*
-  font-weight: 500 !important;*/
+  font-size: 15px;
+  font-weight: 600 !important;
   color: rgba(0, 0, 0, 1);
   white-space: nowrap;
   transition: 0.3s;
@@ -375,6 +375,23 @@ background-color: rgba(0,0,0,0.7);
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+.getapp{
+  color: #151515;
+  
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+.getapp h3{
+  font-size: 50px !important;
+}
+.getapp p{
+  font-size: 24px !important;
+}
+.img-fluid-app{
+  width: 50%;
 }
 
 /*--------------------------------------------------------------

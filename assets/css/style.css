@@ -219,7 +219,7 @@ background-color: rgba(0,0,0,0.7);
   padding: 10px;
   font-size: 15px;
   font-weight: 600 !important;
-  color: rgba(0, 0, 0, 1);
+  color: #151515;
   white-space: nowrap;
   transition: 0.3s;
 }

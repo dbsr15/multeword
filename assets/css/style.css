@@ -1038,7 +1038,7 @@ section {
   color: #FFF !important;
 }
 .section-global{
-  background-image: url(../img/global_bg.jpg);
+  background-image: url(../img/global_bg.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
 }

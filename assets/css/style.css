@@ -1029,7 +1029,7 @@ section {
 }
 
 .section-background{
-  background-image: url(../img/cta-bg.jpg);
+  background-image: url(../img/cta-bg.jpg) !important;
 }
 .section-background h2{
   color: #FFF !important;

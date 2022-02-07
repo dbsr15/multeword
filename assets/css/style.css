@@ -394,7 +394,7 @@ background-color: rgba(0,0,0,0.7);
   font-size: 24px !important;
 }
 .img-fluid-app{
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .getapp{

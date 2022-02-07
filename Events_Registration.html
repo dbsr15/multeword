@@ -96,7 +96,7 @@
   </section><!-- End Breadcrumbs -->
   <div class="testbox">
     <form  method="POST" name="google-sheet" class="col-lg-11">
-     
+      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 
       <div class="banner-1 ">
         <h1> Registration form </h1>
@@ -341,7 +341,7 @@
       </div>
 
       <div class="btn-block form-group">
-        <button type="submit" href="/">Submit</button>
+        <button type="submit" href="#">Submit</button>
       </div>
     </form>
     <script>
@@ -352,6 +352,10 @@
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .then(function Redirect() {
+                      window.location = "https://dbsr15.github.io/multeword/index.html";
+                    })
+          
           .catch(error => console.error('Error!', error.message))
       })
     </script>

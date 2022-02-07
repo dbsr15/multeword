@@ -1044,13 +1044,18 @@ section {
 }
 .section-global p{
   color: #FFF !important;
+  font-size: 24px !important;
 }
 .section-global span{
   color: #FFF !important;
+  font-size: 48px !important;
+ 
+
 }
 .section-background p{
   text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.1);
   color: #FFF !important;
+
 }
 .counts .content h3 {
   font-weight: 700;

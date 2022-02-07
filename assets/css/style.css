@@ -1029,7 +1029,7 @@ section {
 }
 
 .section-background{
-  background-image: url(../img/cta-bg.jpg) !important;
+  background-image: url(../img/cta-bg.jpg);
 }
 .section-background h2{
   color: #FFF !important;
@@ -1038,7 +1038,7 @@ section {
   color: #FFF !important;
 }
 .section-global{
-  background-image: url(../img/global_bg.jpg) !important;
+  background-image: url(../img/global_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

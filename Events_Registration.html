@@ -8,13 +8,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> MulteArts/Registration</title>
+  <title> Multeworld/Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+   <link href="assets/img/favicon.png" rel="icon">
+   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> 
 
   <!-- Google Fonts -->
   <link
@@ -95,47 +95,47 @@
     </div>
   </section><!-- End Breadcrumbs -->
   <div class="testbox">
-    <form action="https://formsubmit.co/d.bharathsimha@gmail.com" method="POST" class="col-lg-11">
-      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+    <form  method="POST" name="google-sheet" class="col-lg-11">
+     
 
       <div class="banner-1 ">
         <h1> Registration form </h1>
-        
       </div>
       <div class="colums">
-        <div class="item">
+        <div class="item form-group">
           <label for="fname"> Name of student(with surname)<span>*</span></label>
-          <input id="fname" type="text" name="fname" required />
+          <input id="fname" type="text" name="Name of student(with surname)" required />
         </div>
-        <div class="item">
-          <label for="eaddress">Name of Mother&Father<span>*</span></label>
-          <input id="eaddress" type="text" name="eaddress" required />
+        <div class="item form-group">
+          <label for="Name of Mother&Father">Name of Mother&Father<span>*</span></label>
+          <input id="Name of Mother&Father"  type="text" name="Name of Mother&Father" required />
         </div>
-        <div class="item">
-          <label for="phone">Phone Number(WhatsApp):<span>*</span></label>
-          <input id="phone" type="tel" name="phone" required />
+        <div class="item form-group">
+          <label for="phone(WhatsApp)">Phone Number(WhatsApp):<span>*</span></label>
+          <input id="phone(WhatsApp)" type="tel" name="phone(WhatsApp)" required />
         </div>
-        <div class="item">
-          <label for="phone">Alternate Phone Number:<span>*</span></label>
-          <input id="phone" type="tel" name="phone" required />
+        <div class="item form-group">
+          <label for="Alternate Phone Number">Alternate Phone Number:<span>*</span></label>
+          <input id="Alternate Phone Number" type="tel" name="Alternate Phone Number" required />
         </div>
-        <div class="item">Email:<span>*</span></label>
-          <input id="city" type="email" name="city" required />
+        <div class="item form-group">
+          <label for="Email" >Email:<span>*</span></label>
+          <input id="Email" type="email" name="Email" required />
         </div>
 
-        <div class="item">
-          <label for="city">Studying:<span>*</span></label>
-          <input id="city" type="text" name="city" required />
+        <div class="item form-group">
+          <label for="Studying">Studying:<span>*</span></label>
+          <input id="Studying" type="text" name="Studying" required />
         </div>
-        <div class="item">
+        <div class="item form-group">
           <label for="city">City<span>*</span></label>
           <input id="city" type="text" name="city" required />
         </div>
       </div>
       <div class="colums">
-        <div class="question">
-          <label>Gender:</label>
-          <div class="question-answer">
+        <div class="question form-group">
+          <label required>Gender:<span>*</span></label>
+          <div class="question-answer" >
             <div>
               <input type="radio" value="MALE" id="gender_1" name="gender" />
               <label for="gender_1" class="radio"><span>MALE</span></label>
@@ -146,8 +146,8 @@
             </div>
           </div>
         </div>
-        <div class="question">
-          <label>Which course you want to learn?</label>
+        <div class="question form-group">
+          <label>Which course you want to learn?<span>*</span></label>
           <div class="question-answer">
             <div>
               <input type="radio" value="technical" id="course_learing_1" name="course_learing" />
@@ -169,7 +169,7 @@
         <div class="question">
           <label>Technical:</label>
           <div class="question-answer">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+            <select class="form-select form-select-sm" name="Technical" aria-label="Default select example">
               <option selected>Open this select menu</option>
               <option value="Salesforce Training">Salesforce Training</option>
               <option value="Salesforce LWC">Salesforce LWC</option>
@@ -187,101 +187,174 @@
         <div class="question">
           <label>Non Technical:</label>
           <div class="question-answer">
-            <select class="form-select form-select-sm" name="non-technical" aria-label="Default select example">
-              <option selected>Open this select menu</option>
+            <select class="form-select form-select-sm" name="Non Technical" required name="non-technical" aria-label="Default select example">
+              <option selected>Select once</option>
               <option value="GRAPHOLOGY">GRAPHOLOGY</option>
               <option value="Pencil CALLIGRAPHY">Pencil CALLIGRAPHY</option>
               <option value="Brush calligraphy">Brush calligraphy</option>
+              <option value="Chacolate MAKING CLASSES">Chacolate MAKING CLASSES</option>
+              <option value="Soap Making classes">Soap Making classes</option>
+
+              <option value="Handwriting Improvement Classes">Handwriting Improvement Classes</option>
+              <option value="Mandala Art">Mandala Art</option>
+              <option value="Music classes">Music classes</option>
+              <option value="Vedic Maths">Vedic Maths</option>
+              <option value="Abacus">Abacus</option>
+
+              <option value="Yoga">Yoga</option>
+              <option value="Coffee painting">Coffee painting</option>
+              <option value="Doodle Art">Doodle Art</option>
+              <option value="Glass Art">Glass Art</option>
+              <option value="Drawing classes">Drawing classes</option>
+
+              <option value="Power of mind(Memory technics)">Power of mind(Memory technics)</option>
+              <option value="Classical Dance(Kuchipudi)">Classical Dance(Kuchipudi)</option>
+              <option value="Classical Dance(Bharathanatyam)">Classical Dance(Bharathanatyam)</option>
+              <option value="Chess">Chess</option>
+              <option value="Madhubani Art">Madhubani Art</option>
+
+              <option value="Crochet classes">Crochet classes</option>
+              <option value="Warli Art">Warli Art</option>
+              <option value="Photoshop">Photoshop</option>
+              <option value="Phonics classes">Phonics classes</option>
+              <option value="Violin">Violin</option>
+
+              <option value="Keyboard">Keyboard</option>
+              <option value="Guitar">Guitar</option>
+              <option value="Rubic cube classes">Rubic cube classes</option>
+              <option value="Spoken English">Spoken English</option>
+              <option value="Arts &crafts">Arts &crafts</option>
+
+              <option value="Slokas">Slokas</option>
+              <option value="LSRW(Listening, Speaking, Reading, Writing Skills)">LSRW(Listening, Speaking, Reading, Writing Skills)</option>
+              <option value="Western Dance">Western Dance</option>
+              <option value="Spoken Telugu">Spoken Telugu</option>
+              <option value="Spoken Tamil">Spoken Tamil</option>
+
+              <option value="Spoken Kannada">Spoken Kannada</option>
+              <option value="French">French</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Portuguese">Portuguese</option>
+              <option value="Madhubani Art">Madhubani Art</option>
+
             </select>
           </div>
         </div>
 
       </div>
-      <div class="question">
+      <div class="question form-group">
         <label>Which batch timings do you want?</label>
         <div class="question-answer">
           <div>
-            <input type="radio" value="none" id="Batch_timings_1" name="Batch_timings" />
-            <label for="Batch_timings_1" class="radio"><span>Anytime between 10am to 12am</span></label>
+            <input type="checkbox" value="Anytime between 10am to 12am" id="Batch_timings_1" name="Which batch timings do you want?" />
+            <label for="Batch_timings_1" class="checkbox"><span>Anytime between 10am to 12am</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="Batch_timings_2" name="Batch_timings" />
-            <label for="Batch_timings_2" class="radio"><span>Anytime between 1pm to 5pm</span></label>
+            <input type="checkbox" value="Anytime between 1pm to 5pm" id="Batch_timings_2" name="Which batch timings do you want?" />
+            <label for="Batch_timings_2" class="checkbox"><span>Anytime between 1pm to 5pm</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="Batch_timings_3" name="Batch_timings" />
-            <label for="Batch_timings_3" class="radio"><span>Anytime between 5pm to 8pm</span></label>
+            <input type="checkbox" value="Anytime between 5pm to 8pm" id="Batch_timings_3" name="Which batch timings do you want?" />
+            <label for="Batch_timings_3" class="checkbox"><span>Anytime between 5pm to 8pm</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="Batch_timings_4" name="Batch_timings" />
-            <label for="Batch_timings_4" class="radio"><span>Before 5am(IST)</span></label>
+            <input type="checkbox" value="Before 5am(IST)" id="Batch_timings_4" name="Which batch timings do you want?" />
+            <label for="Batch_timings_4" class="checkbox"><span>Before 5am(IST)</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="Batch_timings_5" name="Batch_timings" />
-            <label for="Batch_timings_5" class="radio"><span>After 8pm(IST)</span></label>
+            <input type="checkbox" value="After 8pm(IST)" id="Batch_timings_5" name="Which batch timings do you want?" />
+            <label for="Batch_timings_5" class="checkbox"><span>After 8pm(IST)</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="Batch_timings_6" name="Batch_timings" />
-            <label for="Batch_timings_6" class="radio"><span>Other:</span></label>
+            <input type="checkbox" value="Other:" id="Batch_timings_6" name="Which batch timings do you want?" />
+            <label for="Batch_timings_6" class="checkbox"><span>Other:</span></label>
           </div>
         </div>
       </div>
       <div class="colums">
-        <div class="question">
+        <div class="question ">
           <label>Tuitions for which class:</label>
-          <div class="question-answer">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+          <div class="question-answer" >
+            <select class="form-select form-select-sm" name="Tuitions for which class" required aria-label="Default select example">
               <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="First class">First class</option>
+              <option value="Second class">Second class</option>
+              <option value="Third class">Third class</option>
+              <option value="Fourth class">Fourth class</option>
+              <option value="Fifth class">Fifth class</option>
+              <option value="Sixth class">Sixth class</option>
+
+              <option value="Seventh class">Seventh class</option>
+              <option value="Eighth class">Eighth class</option>
+              <option value="Ninth class">Ninth class</option>
+              <option value="10th class">10th class</option>
+              <option value="LKG">LKG</option>
+              <option value="UKG">UKG</option>
             </select>
           </div>
         </div>
         <div class="question">
-          <label>Subject</label>
+          <label>Subject:</label>
           <div class="question-answer">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+            <select class="form-select form-select-sm" name="Subject" aria-label="Default select example">
               <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="Maths">Maths</option>
+              <option value="EVS/Science">EVS/Science</option>
+              <option value="Telugu">Telugu</option>
+              <option value="Hindi">Hindi</option>
+              <option value="English">English</option>
+
+              <option value="Kannada">Kannada</option>
+              <option value="Malayalam">Malayalam</option>
+              <option value="Sanskrit">Sanskrit</option>
+              <option value="All subjects">All subjects</option>
             </select>
           </div>
         </div>
 
       </div>
       <div class="item">
-        <label for="city">Any other course along with the above courses you can type here..<span>*</span></label>
-        <input id="city" type="text" name="city" required />
+        <label for="Abovecourses">Any other course along with the above courses you can type here..<span>*</span></label>
+        <input id="Abovecourses" type="text" name="Any other course along with the above courses you can type here.." required />
       </div>
       <div class="question">
         <label>Complete the payment using Phone Pe /g pay to this number 9000341717(Veena Puppala) *</label>
         <div class="question-answer">
           <div>
-            <input type="radio" value="none" id="payment_1" name="payment"/>
+            <input type="radio" value="none" id="payment_1" name="payment Status"/>
             <label for="payment_1" class="radio"><span>Paid</span></label>
           </div>
           <div>
-            <input type="radio" value="none" id="payment_2" name="payment" />
+            <input type="radio" value="none" id="payment_2" name="payment Status" />
             <label for="payment_2" class="radio"><span>Not Paid</span></label>
           </div>
          
         </div>
       </div>
       <div class="item">
-        <label for="city">If you paid share your transaction ID here to complete your registration:<span>*</span></label>
-        <input id="city" type="text" name="city" required />
+        <label for="transactionid">If you paid share your transaction ID here to complete your registration:<span>*</span></label>
+        <input id="transactionid" type="text" name="If you paid share your transaction ID here to complete your registration" required />
       </div>
       <div class="item">
-        <label for="city">Who referred you to join this course? (Name)<span>*</span></label>
-        <input id="city" type="text" name="city" required />
+        <label for="referredname">Who referred you to join this course? (Name)<span>*</span></label>
+        <input id="referredname" type="text" name="Who referred you to join this course" required />
       </div>
 
-      <div class="btn-block">
+      <div class="btn-block form-group">
         <button type="submit" href="/">Submit</button>
       </div>
     </form>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxdOH4K_2h33uxVqjti8t_mFAKpQBMRLfE-qDjWdwaGHqn9Z21K2o0dz-aRgE3yM9oNBQ/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </div>
   <!-- ======= Footer ======= -->
   <footer id="footer-1">

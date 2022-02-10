@@ -1038,19 +1038,23 @@ section {
   color: #FFF !important;
 }
 .section-global{
-  background-image: url(../img/global_bg.jpg);
+ /* background-image: url(../img/World-Map-Wallpaper-HD-PixelsTalk.Net.gif);*/
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .section-global p{
-  color: #FFF !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 24px !important;
 }
 .section-global span{
-  color: #FFF !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 48px !important;
  
 
+}
+.img-fluid-global{
+  width: 100%;
+  height: auto;
 }
 .section-background-color{
   color: #151515;

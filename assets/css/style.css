@@ -112,6 +112,8 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+
 }
 /*--------------------------------------------------------------
 # Header
@@ -500,6 +502,9 @@ background-color: rgba(0,0,0,0.7);
     font-size: 20px;
     line-height: 24px;
   }
+  #footer-1 h2 {
+    font-size: 1.2rem !important;
+}
 }
 .banner{
   width: 100vh;

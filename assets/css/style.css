@@ -195,6 +195,7 @@ background-color: rgba(0,0,0,0.7);
   }
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -407,7 +408,7 @@ background-color: rgba(0,0,0,0.7);
     font-size: 40px !important;
   }
   section{
-    padding: 40px 20px 0px 0px !important;
+    padding: 40px 0px 0px 0px !important;
   }
   .portfolio-details .portfolio-details-slider img {
     width: 100%;
@@ -652,6 +653,16 @@ section {
 }
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffc451;
+}
+@media (max-width:760px){
+  .clients .swiper-slide img {
+    max-width: 100% !important;
+    /*filter: grayscale(100);*/
+  }
+  .section-global p {
+    color: rgb(0, 0, 0) !important;
+    font-size: 17px !important;
+}
 }
 
 /*--------------------------------------------------------------
@@ -1063,13 +1074,12 @@ section {
   color: #FFF !important;
 }
 .section-global{
- /* background-image: url(../img/World-Map-Wallpaper-HD-PixelsTalk.Net.gif);*/
   background-repeat: no-repeat;
   background-size: contain;
 }
 .section-global p{
   color: rgb(0, 0, 0) !important;
-  font-size: 24px !important;
+  font-size: 24px;
 }
 .section-global span{
   color: rgb(0, 0, 0) !important;
@@ -1080,6 +1090,27 @@ section {
 .img-fluid-global{
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 440px) {
+  .flags{
+   display: none !important;
+  }
+  .counts .content .count-box p {
+    margin: 0 0 0 10px !important;
+}
+.counts .content .count-box span {
+  margin: 0 0 0 10px !important;
+}
+.img-fluid-global {
+  width: 60% !important;
+  height: auto;
+}
+
+.counts .content {
+    padding: 10px 0 !important;
+}
+
 }
 .section-background-color{
   color: #151515;
@@ -1119,7 +1150,7 @@ section {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   color: #3b3b3b;
 }
 .counts .content .count-box a {
@@ -1152,6 +1183,109 @@ section {
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# Team members 
+--------------------------------------------------------------*/
+.Sub-team {
+  padding: 80px 0;
+  background-color: #7e9e8d;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.Sub-team::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.Sub-team .section-header {
+  margin-bottom: 40px;
+}
+.Sub-team .testimonials-carousel, .Sub-team .testimonials-slider {
+  overflow: hidden;
+}
+.Sub-team .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+.Sub-team .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+.Sub-team .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+.Sub-team .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+.Sub-team .testimonial-item .quote-icon-left, .Sub-team .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 26px;
+}
+.Sub-team .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+.Sub-team .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+.Sub-team .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+.Sub-team .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.Sub-team .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 0.5;
+}
+.Sub-team .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
+  opacity: 1;
+}
+@media (min-width: 1024px) {
+  .Sub-team {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 992px) {
+  .Sub-team .testimonial-item p {
+    width: 80%;
+  }
+}
+.card{
+  background-color: transparent;
+  border:none;
+  color:#FFF !important;
+}
+.card strong{
+  color: #FFF;
+}
+.card-title{
+  text-transform: uppercase;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

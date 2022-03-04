@@ -415,6 +415,9 @@ background-color: rgba(0,0,0,0.7);
     height: 65vh !important;
     padding-top: 15px;
 }
+.flex-column {
+  flex-direction: row !important;
+}
 }
 
 
@@ -1188,8 +1191,8 @@ section {
 /*--------------------------------------------------------------
 # Team members 
 --------------------------------------------------------------*/
-.Sub-team {
-  padding: 80px 0;
+.Sub-team{
+  padding: 20px 0;
   background-color: #7e9e8d;
   background-position: center center;
   background-size: cover;

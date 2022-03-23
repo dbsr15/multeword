@@ -1,10 +1,3 @@
-/**
-* Template Name: Gp - v4.7.0
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -424,7 +417,7 @@ background-color: rgba(0,0,0,0.7);
 @media (max-width:500px){
   .portfolio-details .portfolio-details-slider img {
     width: 100%;
-    height: 50vh !important;
+    height: 40vh !important;
     padding-top: 15px;
 }
 }
@@ -432,10 +425,24 @@ background-color: rgba(0,0,0,0.7);
 @media (max-width:330px){
   .portfolio-details .portfolio-details-slider img {
     width: 100%;
-    height: 35vh !important;
+    height: 33vh !important;
     padding-top: 18px;
 }
 }
+
+@media (max-width:320px){
+  .breadcrumbs h2 {
+    font-size: 20px !important;
+   
+}
+.section-title p {
+
+  font-size: 30px !important;
+
+}
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
